@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <input type="text" placeholder="Tarefa" id="tarefa">
+    <button onclick="addTarefa()">Adicionar</button>
+
+    <ul id="lista"> <!-- UL = Unordered List / OL = Ordered List -->
+
+    </ul>
+
+    <script>
+        var lista = document.getElementById("lista")
+
+            function addTarefa(){
+                var tarefa = document.getElementById("tarefa")
+                var li = document.createElement("li")
+                li.innerText = tarefa.value  
+                lista.appendChild(li)       
+            }
+
+    </script>
+
+</body>
+</html>
+
